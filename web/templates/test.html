@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head></head>
+  <body>   
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Img</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %} 
+          <tr>
+            <td><a href="https://www.sreality.cz/{{row[1]}}">{{row[0]}}</a></td>
+            <td><img src="{{row[2]}}" height=200 width=200 /><td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>
