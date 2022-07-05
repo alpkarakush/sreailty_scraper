@@ -11,5 +11,4 @@ ENV FLASK_APP /app/app.py
 EXPOSE 8080
 EXPOSE 5000
 
-
 CMD [ "flask", "run", "--host=0.0.0.0" ]

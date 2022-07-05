@@ -9,4 +9,5 @@ RUN pip3 install scrapy --upgrade
 
 EXPOSE 80
 EXPOSE 5432/tcp
-CMD ["scrapy", "crawl", "sreality"]
+# CMD ["scrapy", "crawl", "sreality"]
+CMD ["./wait-for-it.sh" , "db:5432" , "--strict" , "--timeout=300" , "--" , "scrapy", "crawl", "sreality"]

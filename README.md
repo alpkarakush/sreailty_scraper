@@ -4,4 +4,4 @@ A simple app that scrapes first 200 flats from website sreality.cz, stores the d
 
 # Instructions
  - docker-compose up
- - Go to localhost:5000
+ - go to localhost:5000
